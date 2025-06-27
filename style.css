@@ -1,0 +1,332 @@
+body{
+    margin: 0;
+    height: 100vh;
+}
+.sitelogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin:60px;
+    
+}
+.logo{
+    width: 200px;
+    height: auto;
+}
+.sitename {
+    text-align: center;
+    white-space: nowrap;
+    font-family: Dauphin;
+    font-size: 50px;
+    margin-top: 5px;
+}
+@media (max-width: 768px) {
+    .sitename {
+      font-size: 24px; 
+    }
+  }
+.home-page{
+    padding-bottom: 1px;
+    height: 450px;
+    background: url('images/bg.png');
+    background-size:auto ;
+    background-repeat: no-repeat;
+    background-position: center;
+}    
+body{
+    background-color: rgba(143, 139, 139, 0.26); 
+    padding: 2px;
+    border-radius: 10px;
+}
+  .detailgrid{
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    transition: 0.3s ease;
+  }
+  
+ .detail{
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
+  @media (max-width: 768px) {
+    .detail {
+      font-size: 24px; 
+    }
+  }
+  
+ .detailgrid:hover .detail{
+    max-height: 300px; 
+    opacity: 1;
+  }
+.homepagebottom {
+    font-size: 20px;
+    height: 100px;
+    margin-top: 0px;
+    padding-top: 4px;
+    padding-bottom: 1px;
+    
+    text-align: center;
+}
+.homepagebott {
+    font-size: 20px;
+    height: 100px;
+    margin-top: 50px;
+    padding-top: 4px;
+    padding-bottom: 1px;
+    
+    text-align: center;
+}
+.bottomnav{
+    display: flex;
+    flex-direction: column;
+    background: rgba(255,255,255,0.8);
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+}
+.bottomnav a{
+    margin: 1px 0;
+}
+footer {
+    background: black;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-size: 100%;
+    color: azure;
+
+}
+nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    font-size: 24px ;
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      display: none;
+      flex-direction: column;
+      background-color: #222;
+      padding: 10px;
+    }
+  }
+    .hamburger {
+        position: relative;
+        display: none;
+        font-size: 100px;
+        justify-content: space-between;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 1000;
+    }
+    .nav-links {
+        display: flex;
+        gap: 20px;
+      }
+    .hamburger span {
+        display: block;
+        height: 4px;
+        background-color: black;
+        border-radius: 2px;
+    }
+    @media (max-width: 768px) {
+        .hamburger {
+          display: block;
+        }
+      
+        .nav-links {
+          display: none;
+          flex-direction: column;
+          background-color: white;
+          position: absolute;
+          top: 60px;
+          left: 0;
+          width: 100%;
+          text-align: center;
+          gap: 10px;
+          padding: 10px;
+        }
+      
+        .nav-links.active {
+          display: flex;
+        }
+      }
+      .contact-form {
+        padding: 80px;
+        max-width: 600px;
+        margin: auto;
+        margin-top: 40px;
+        text-align: left;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+      }
+      
+      .contact-form label {
+        display: block;
+        margin: 10px 0 5px;
+        font-weight: bold;
+      }
+      
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px rgba(255, 255, 255, 0.3);
+      }
+      .contact-form button {
+        background-color: #333;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      input,
+      textarea {
+        box-shadow: none;
+        border: 1px solid #ccc;
+        transition: box-shadow 0.3s ease, border 0.3s ease;
+        background-color: rgba(255, 255, 255, 0.6);
+      }
+      
+      input:hover,
+      textarea:hover {
+        box-shadow: 0 0 8px 2px #00f7ff;
+        border: 1px solid #00f7ff;
+      }
+      
+      
+      .contact-form button:hover {
+        background-color: #555;
+      }
+
+.whole {
+    background: url("images/bgg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    gap: 10px;
+    padding: 10px;
+    max-width: 1240px;
+    margin: auto;
+
+    
+}
+  .ff {
+      height: 350px;
+      background-color: rgba(226, 223, 223, 0.541);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 4%;
+      overflow: hidden;
+      cursor: pointer;
+
+  }
+  .ff img {
+      max-width: 100%;
+      max-height: 280px;
+      object-fit: contain;
+      display: block;
+      transition: transform 0.3s ease;
+  }
+  .ff img:hover {
+      transform: scale(1.05);
+  }
+  .noo {
+      
+      margin: 0;
+      padding: 0px;
+      display: flex;
+      justify-content: center;
+  }
+  .noo {
+      background-image: url("images/catbg.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding: 0%;
+      border: 2px solid black;
+  }
+  .ff hr {
+      width: 90%;
+      margin: 5px 0;
+      border: 0.5px solid black;
+  }
+  .info{
+      text-align: center;
+      font-family: sans-serif;
+  }
+  .name{
+      font-size: 16px;
+      font-weight: bold;
+    margin: 2px 0;
+  }
+  .price {
+      font-size: 14px;
+      color: #222;
+      margin: 0;
+  }
+  @media (max-width: 768px){
+      .catalog-grid{
+          grid-template-columns: repeat(2, 1fr);
+      }
+  }
+  @media(max-width: 480px){
+      .catalog-grid {
+          grid-template-columns: 1fr;
+      }
+  }
+   .logoo {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    height: 50px;
+    width: auto;
+    z-index: 1000;
+   }
+  .heading {
+      padding-top: 1px;
+      padding-right: 10px;
+      margin-top: 0;
+      font-size: 30px;
+  }
+  @media (max-width : 500px){
+      .logoo {
+          height: 30px;
+          position:absolute;
+          right: 5px;
+          top: 5px;
+      }
+  }
+  @media (max-width : 400px){
+  .heading {
+      height: 22px;
+      font-size: 19px;
+      padding-top: 5px;
+  }
+}
+  
+
+  
+  
